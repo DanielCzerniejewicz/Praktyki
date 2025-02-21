@@ -1,0 +1,34 @@
+#menu_user_dodaj
+{
+    position: relative;
+    display: block;
+    background-color: gainsboro;
+    height: 50vh;
+    width: 20%;
+    border: 2px solid red;
+    border-radius: 25px;
+    margin-left: 40vw;
+    margin-top: 25vh;
+}
+#formularz_user_dodaj
+{
+    position: relative;
+    text-align: center;
+    top:20%;
+
+}
+#formularz_user_dodaj input,select
+{
+    position: relative;
+    background-color: silver;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    width: 7vw;
+    height: 5vh;
+}
+#formularz_user_dodaj p
+{
+    position: relative;
+    display: flex;
+    text-align: center;
+}
