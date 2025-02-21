@@ -1,0 +1,50 @@
+input {
+    margin: 10px;
+}
+img {
+    padding: 5px;
+    max-height: 150px;
+    border-color: #004D40;
+    border-style: dotted;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+h3 {
+    text-align: center;
+}
+#gora {
+    width: 40%;
+    height: 250px;
+    background-color: #E0F2F1;
+    margin: auto;
+}
+#dol {
+    width: 40%;
+    height: 250px;
+    background-color: #B2DFDB;
+    margin: auto;
+}
+#srodkowy {
+    background-color: #E0F2F1;
+    height: 500px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+#lewy {
+    background-color: #80CBC4;
+    color: white;
+    height: 500px;
+    width: 30%;
+    margin: auto;
+}
+body {
+    font-family: Verdana, serif;
+}
+#banner, footer {
+    background-color: #004D40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
