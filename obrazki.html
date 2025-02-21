@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<!--Jako Banner-->
+<!--Zawartość banera: nagłówek drugiego stopnia o treści „Efekty na obrazach”-->
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+<!--ASIDE ALE LEWY-->
+    <aside>
+<!--LEWY Górny-->
+<!--        ‒ Zawartość pierwszego bloku:
+‒ Obraz pszczola.jpg z tekstem alternatywnym o treści „pszczoła na fioletowym kwiatku”
+‒ Poniżej trzy pola opcji: „Blur”, „Sepia” i „Negatyw”, zgrupowane tak, że jednocześnie może być
+wybrane tylko jedno pole
+‒ Poniżej przycisk „Zastosuj”, którego kliknięcie powoduje transformacje obrazu 1
+-->
+        <section id="pszczola">
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="bydle"> <br>
+            <form>
+                <input type="radio" name="radioo" id="blur">Blur <br>
+                <input type="radio" name="radioo" id="sepia">Sepia <br>
+                <input type="radio" name="radioo" id="negatyw">Negatyw <br>
+            </form>
+                <button onclick="Pszczola()">Zastosuj</button>
+        </section>
+<!--LEWY DOLNY-->
+<!--        ‒ Zawartość trzeciego bloku:
+‒ Obraz owoce.jpg z tekstem alternatywnym o treści „Kosz pełen owoców”
+‒ Poniżej pole edycyjne w postaci suwaka z wartością minimalną 0 i maksymalną 100, wartość
+ustawiona w stanie początkowym to 100
+‒ Poniżej przycisk „Zastosuj”, którego kliknięcie powoduje transformację obrazu 3-->
+        <section>
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="owoce">
+            <br>
+            <input type="range" min="0" max="100" value="100" id="suwak_1">
+            <br>
+            <button onclick="owoce()">Zastosuj</button>
+        </section>
+    </aside>
+
+<!--ASIDE ALE PRAWY-->
+    <aside>
+<!--PRAWY GÓRNY-->
+<!--        ‒ Zawartość drugiego bloku:
+‒ Obraz pomarancza.jpg z tekstem alternatywnym o treści „drzewo pomarańczy”
+‒ Poniżej przycisk „Kolorowy” oraz przycisk „Czarno-biały”, ich kliknięcie powoduje transformację
+obrazu 2-->
+        <section>
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="pomarancze">
+            <br>
+            <button id="kolor" onclick="kolor_Pomarancze()">Kolorowy</button> &nbsp; <button id="czarnobialy" onclick="czarnobiale_Pomarancze()">Czarno-biały</button>
+        </section>
+<!--        PRAWY DOLNY         -->
+<!--        ‒ Zawartość czwartego bloku:
+‒ Obraz zolw.jpg z tekstem alternatywnym o treści „Żółw w wodzie”
+‒ Poniżej pole edycyjne w postaci suwaka z wartością minimalną 0 i maksymalną 250
+‒ Poniżej przycisk „Zastosuj”, którego kliknięcie powoduje transformację obrazu 4-->
+        <section>
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="zolw"> <br>
+            <input type="range" min="0" max="250" id="suwak_2">
+            <br>
+            <button onclick="zolw()">Zastosuj</button>
+        </section>
+    </aside>
+<!--‒ Zawartość stopki:
+‒ Paragraf (akapit) z odnośnikiem do adresu http://www.css.com/, o treści „Zobacz inne efekty
+obrazu”. Odnośnik otwiera się w nowej karcie przeglądarki
+‒ Paragraf o treści: „Stronę wykonał: ”, dalej wstawiony numer zdającego-->
+    <footer>
+        <p><a href="http://css.com/" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <br>
+        <p>Strone wykona {NUMER}</p>
+    </footer>
+</body>
+</html>

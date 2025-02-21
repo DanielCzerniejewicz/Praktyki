@@ -1,0 +1,66 @@
+/*
+‒ Domyślne formatowanie wszystkich selektorów: krój czcionki Century, w przypadku jego braku Serif,
+wyrównanie tekstu do środka
+‒ Wspólne dla banera i stopki: kolor tła Indigo, biały kolor czcionki, tekst pochylony, marginesy
+wewnętrzne 2 px
+‒ Wspólny dla czterech bloków: szerokość 50%, wysokość 470 px
+‒ Dla selektora obrazu: marginesy wewnętrzne 3 px, zewnętrzne 10 px, obramowanie linią kreskową
+o grubości 2 px koloru SlateBlue
+‒ Dla odnośnika: biały kolor czcionki
+‒ Dla przycisków: kolor tła SlateBlue, biały kolor czcionki, brak obramowania, marginesy wewnętrzne
+górny i dolny 10 px, lewy i prawy 20 px, margines zewnętrzny górny 10 px
+‒ W momencie, gdy kursor myszy znajdzie się na przycisku, jego kolor tła zmienia się na Indigo
+‒ Jedynie dla pól edycyjnych w postaci suwaka: szerokość 80%
+
+ */
+input[type='range']
+{
+    width: 80%;
+}
+button :hover
+{
+    background-color: Indigo;
+}
+button
+{
+    background-color: SlateBlue;
+    color: white;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+a
+{
+    color: white;
+}
+img
+{
+    padding: 3px;
+    margin: 10px;
+    border: 2px solid slateblue;
+}
+
+aside
+{
+    display: flex;
+    font-family: Century, Serif, serif;
+    text-align: center;
+}
+footer, header
+{
+    text-align: center;
+    background-color: Indigo;
+    color:white;
+    font-style: italic;
+    padding: 2px;
+}
+section
+{
+    display: block;
+    width: 50%;
+    height: 470px;
+}
