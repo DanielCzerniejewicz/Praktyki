@@ -1,0 +1,72 @@
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #006064;
+    color: white;
+    text-align: right;
+    padding: 10px 10px 10px;
+}
+#baner
+{
+    background-color: #00838F;
+    height: 200px;
+}
+#menu
+{
+    background-color: #006064;
+    padding: 15px 15px 15px 15px;
+}
+button
+{
+    background-color: #00838F;
+    color: white;
+}
+
+li
+{
+    text-align: left;
+}
+button :hover
+{
+    color:#80DEEA;
+}
+#blok1
+{
+
+    height: 350px;
+    width: 33%;
+}#blok2
+{
+
+    height: 350px;
+    width: 33%;
+
+}#blok3
+{
+
+    height: 350px;
+    width: 33%;}
+
+body
+{
+    background-color: #E0F7FA;
+    font-family: Arial;
+    text-align: center;
+}
+#kontener
+{
+    width: 95%;
+    margin: auto;
+}
+#menu a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+#main
+{
+    display: flex;
+}

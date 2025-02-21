@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="styl.css">
+    <meta charset="UTF-8">
+    <title>Komputery</title>
+    <link rel="icon" href="favicon.png">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="kontener">
+    <div id="baner">
+        <img src="animacja.gif" alt="Pogotowie Komputerowe">
+    </div>
+
+    <div id="menu">
+        <a href="index.html">Strona Główna</a> <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div id="main">
+        <div id="blok1">
+
+        </div>
+        <div id="blok2">
+
+            <h2>Kontakt</h2>
+            <table>
+
+                <tr>
+                    <td>Imię : </td><td><input type="text" id="i_imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko : </td><td><input type="text" id="i_nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-Mail : </td><td><input type="email" id="i_email"></td>
+                </tr>
+                <tr>
+                    <td>Zgłoszenie : </td><td>
+
+                    <select id="selekcik">
+
+                        <option>naprawa komputerów</option>
+                        <option>odzyskiwanie danych</option>
+                        <option>wirusy</option>
+                        <option>Konfiguracja LAN</option>
+
+                    </select>
+
+                </td>
+                </tr>
+                <tr>
+                    <td></td><td><input type="checkbox" checked>Wyslij Zgloszenie</td>
+                </tr>
+                <tr>
+                    <td></td><td><button>Czyść</button> <button onclick="Wyslij()">Wyślij</button></td>
+                </tr>
+            </table>
+            <hr>
+            <p id="imie"></p> <p id="nazwisko"></p>
+            <br>
+            <p id="email"></p>
+            <br>
+            <p id="usluga"></p>
+        </div>
+        <div id="blok3">
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Autor <i>00000</i></p>
+</footer>
+</body>
+</html>
