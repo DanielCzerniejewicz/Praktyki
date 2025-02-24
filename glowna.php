@@ -10,9 +10,8 @@
     <header>
         <h1>Podjebeczki</h1>
         <button><a href="logout.php">Wyloguj</a></button>
-<!--Tu jest do jebnecia funkcja ktora sprawdza czy admin ofc i dopiero wtedy wyswietli to-->
-        <button><a href="panel.php">Panel admina</a></button>
-        <button><a href="dodaj_podjebke.php">Podaj podjebke</a></button>
+        <button><a href="panel.php">Panel</a></button>
+        <button><a href="dodaj_podjebke.php">Dodaj podjebke</a></button>
     </header>
     <div id="podjebki">
 <!--        OSTATNIE PODJEBKI WYPISANE Z BAZY DANYCH (MAX Z ID)        Gotowe -->

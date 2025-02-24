@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $haslo = isset($_POST["haslo"]) ? $_POST["haslo"] : "";
 
     if (!empty(trim($login)) && !empty(trim($haslo))) {
-        $stmt = $conn->prepare("SELECT userzy.ID_Usera, userzy.Haslo FROM userzy WHERE userzy.Ksywa = ? AND userzy.Haslo = ?");
+        $stmt = $conn->prepare("SELECT ID_Usera, Haslo FROM userzy WHERE Ksywa = ? AND Haslo = ?");
 
         if ($stmt === false) {
             die("Error preparing statement: " . $conn->error);
