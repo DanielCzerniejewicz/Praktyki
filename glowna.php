@@ -80,7 +80,7 @@
                 $pass = "";
                 $base = "podpierdalacze";
                 $conn = new mysqli($server, $username, $pass, $base);
-                $query = "SELECT podjebki.ID_Sygnalisty,sygnalisci.Ksywa, SUM(punktacja.Punktacja) as PunktySzacunku FROM podjebki INNER JOIN punktacja ON podjebki.Kategoria = punktacja.Kategoria INNER JOIN sygnalisci ON podjebki.ID_Sygnalisty = sygnalisci.ID_Sygnalisty GROUP BY podjebki.ID_Sygnalisty HAVING PunktySzacunku > 0;";
+                $query = "SELECT podjebki.ID_Sygnalisty,sygnalisci.Ksywa, SUM(punktacja.Punktacja) as PunktySzacunku FROM podjebki INNER JOIN punktacja ON podjebki.Kategoria = punktacja.Kategoria INNER JOIN sygnalisci ON podjebki.ID_Sygnalisty = sygnalisci.ID_Sygnalisty GROUP BY podjebki.ID_Sygnalisty HAVING PunktySzacunku > 0 ORDER BY PunktySzacunku DESC;";
                 if($wynik = $conn->query($query))
                 {
                     echo "<table border='1'>";
