@@ -1,0 +1,54 @@
+CREATE DATABASE IF NOT EXISTS `Podpierdalacze`; 
+USE `Podpierdalacze`;
+
+CREATE TABLE IF NOT EXISTS `Punktacja` ( 
+    ID_Kategori INT(2) AUTO_INCREMENT PRIMARY KEY, 
+    Kategoria VARCHAR(255),
+    Punktacja INT(2) 
+);
+
+CREATE TABLE IF NOT EXISTS `Bonusy` ( 
+    ID_Bonusu INT(2) AUTO_INCREMENT PRIMARY KEY,  -- Dodajemy AUTO_INCREMENT jako klucz podstawowy
+    Kategoria VARCHAR(255),
+    Punktacja INT(2)
+);
+
+CREATE TABLE IF NOT EXISTS `Sygnalisci` ( 
+    ID_Sygnalisty INT(5) PRIMARY KEY AUTO_INCREMENT, 
+    Ksywa VARCHAR(40) NOT NULL 
+);
+
+CREATE TABLE IF NOT EXISTS `Userzy` ( 
+    ID_Usera INT AUTO_INCREMENT PRIMARY KEY, 
+    Ksywa VARCHAR(50) NOT NULL, 
+    Haslo VARCHAR(50) NOT NULL,
+    Ranga VARCHAR(50) NOT NULL 
+);
+
+CREATE TABLE IF NOT EXISTS `Podjebki` ( 
+    ID_Podjebki INT(5) AUTO_INCREMENT PRIMARY KEY, 
+    ID_Sygnalisty INT(5), 
+    Kategoria VARCHAR(255), 
+    Ksywa VARCHAR(50)
+);
+
+-- Wstawianie danych do tabeli Punktacja
+INSERT INTO Punktacja(Kategoria, Punktacja) 
+VALUES 
+  ("Przypadkowe nieumyślne podpierdolenie", 1), 
+  ("Niby nieumyślne podpierdolenie", 5), 
+  ("Bez świadków, przełożonemu", 10), 
+  ("Anonimowy samo-donos by zaistnieć", 20), 
+  ("Podpierdolka w obecności świadków", 30), 
+  ("Samo-podpierdolka przełożonemu", 40), 
+  ("Samo-podpierdolka przy świadkach", 50), 
+  ("Podpierdolka przełożonemu przy podpierdalanym", 60), 
+  ("Podpierdolka przy podpierdalanym z świadkami", 70), 
+  ("Podpierdolenie przy podpierdalanym mimo bycia niewinnym", 80);
+
+-- Wstawianie danych do tabeli Bonusy
+INSERT INTO Bonusy(Kategoria, Punktacja) 
+VALUES 
+  ("Podpierdolenie najlepszego kumpla", 20), 
+  ("Za nim czyn dokonany", 25), 
+  ("Picie wódki z podpierdalanym w ciągu tygodnia", 100);
