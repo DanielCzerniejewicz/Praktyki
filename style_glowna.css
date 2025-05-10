@@ -1,0 +1,80 @@
+#pasek
+{
+    position: absolute;
+    background-color: gainsboro;
+    width: 100vw;
+    height: 10vh;
+    top:0;
+    left:0;
+}
+#forcom
+{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+#f2
+{
+    color: red;
+}
+#strona {
+    position: fixed;
+    top: 10vh;
+    height: 100%;
+    left:0;
+    width: 100%;
+    background-color: silver;
+}
+#menu
+{
+    position: fixed;
+    top: 10vh;
+    height: 100%;
+    left:40%;
+    width: 25%;
+    background-color: #738692;
+}
+#menu_tekst
+{
+    text-align: center;
+    font-size:40px;
+}
+#admin_button
+{
+    position: fixed;
+    color:red;
+    right: 0px;
+    width: 10vw;
+    height: 5vh;
+    top:2vh;
+    background-color: gainsboro;
+    border: 2px solid red;
+    border-radius: 25px;
+    font-size: medium;
+}
+#admin_button:hover
+{
+    cursor: pointer;
+    width: 11vw;
+    height: 8vh;
+    top: 1vh;
+
+}
+
+#zamowienia_button
+{
+    position:relative;
+    display: flex;
+    width: 50%;
+    height: 5vh;
+    top:10vh;
+    left: 25%;
+    background-color: gainsboro;
+    border: 2px solid red;
+    border-radius: 25px;
+    font-size: large;
+}
+#koryto
+{
+    font-size: 25px;
+}

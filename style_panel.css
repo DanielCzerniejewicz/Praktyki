@@ -1,0 +1,97 @@
+#admin_button
+{
+    position: fixed;
+    color:red;
+    right: 0px;
+    width: 10vw;
+    height: 5vh;
+    top:2vh;
+    background-color: gainsboro;
+    border: 2px solid red;
+    border-radius: 25px;
+    font-size: medium;
+}
+#admin_button:hover
+{
+    cursor: pointer;
+    width: 11vw;
+    height: 8vh;
+    top: 1vh;
+
+}
+#pasek
+{
+    position: absolute;
+    background-color: gainsboro;
+    width: 100vw;
+    height: 10vh;
+    top:0;
+    left:0;
+}
+#forcom
+{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+#f2
+{
+    color: red;
+}
+#srodek
+{
+    display: flex;
+    position: relative;
+    width: 20%;
+    height: 20vw;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 100%);
+    border: 5px solid #000000;
+    border-radius: 40px;
+    left: 40%;
+    top:23vh;
+}
+/*usun dania*/
+#lg
+{
+    position: relative;
+    background-color: gainsboro;
+    border: 5px solid red;
+    border-radius: 25px;
+    width: 9vw;
+    margin-top: 1vh;
+    height: 16vh;
+}
+/*dodaj dania*/
+#pg
+{
+    position: relative;
+    background-color: gainsboro;
+    border: 5px solid red;
+    border-radius: 25px;
+    width: 9vw;
+    margin-top: 1vh;
+    height: 16vh;
+    margin-left: 1.62vw;
+}
+/*Dodaj usera*/
+#ld {
+    position: relative;
+    background-color: gainsboro;
+    border: 5px solid red;
+    border-radius: 25px;
+    margin-top: 6vh;
+    height: 16vh;
+    width: 9vw;
+}
+/*Usun usera*/
+#pd
+{
+    position: relative;
+    background-color: gainsboro;
+    border: 5px solid red;
+    border-radius: 25px;
+    height: 16vh;
+    width: 9vw;
+    left: 1.62vw;
+}
